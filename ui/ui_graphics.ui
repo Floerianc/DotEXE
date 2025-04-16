@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Frame</class>
+ <widget class="QFrame" name="Frame">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>640</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Frame</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(0, 0, 0);</string>
+  </property>
+  <widget class="QGraphicsView" name="graphicsView">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1000</width>
+     <height>640</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>128</width>
+     <height>128</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16000</width>
+     <height>16000</height>
+    </size>
+   </property>
+   <property name="cursor" stdset="0">
+    <cursorShape>CrossCursor</cursorShape>
+   </property>
+   <property name="verticalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
+   </property>
+   <property name="horizontalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
+   </property>
+   <property name="transformationAnchor">
+    <enum>QGraphicsView::NoAnchor</enum>
+   </property>
+   <property name="viewportUpdateMode">
+    <enum>QGraphicsView::SmartViewportUpdate</enum>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
