@@ -1,0 +1,7 @@
+dont fucking do any GUI work in other threads, otherwise this shit will randomly crash
+fuck floats, always use ints when you can
+don't use any timers in other threads or the program will cry
+QThreads have a small delay, so don't do any work with the QThread variables in other threads
+for the love of god use objects instead of x and ys in pyqtSignal it's so much better
+
+Conclusion: I love multithreading <3
