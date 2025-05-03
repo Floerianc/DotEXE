@@ -85,7 +85,7 @@ class Window(Ui_Frame):
                 "name": "FPSLabel", 
                 "text": "FPS:                    ", 
                 "font_size": self.config.FPSLS, 
-                "style": None, 
+                "style": "color: white; font-weight: bold; background-color: black", 
                 "position": (0, 0)
             },
             {
