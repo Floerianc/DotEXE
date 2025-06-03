@@ -27,7 +27,6 @@ class GameMonitor(QThread):
             window (Window): The Window class to access GUI elements
         """
         super().__init__()
-        self.config = Config()
         self.window = window
     
     def run(self) -> None:

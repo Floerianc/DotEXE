@@ -4,7 +4,7 @@
 <h1 align="center">DotEXE</h1>
 
 <p align="center">
-    You're a square, pursued by squares. Made with PyQt5
+    You're a square, pursued by squares. Made with PyQt5<br>
 </p>
 
 <p align="center">
@@ -30,12 +30,17 @@
 - **Wave System**: Increasing difficulty with each new enemy wave.
 - **Minimalist Design**: Clean visuals focusing on simple gameplay mechanics.
 
+_Try beating my record: **4,788,867,552.84**_ ;)
+
 ---
 
-## 🖥️ Screenshots
+## 🖥️ Media
 
 <p align="center">
-  <img src="assets/gameplay.png" alt="Gameplay Screenshot" width="600"/>
+    <img src="assets/gameplay.png" alt="Gameplay Screenshot" width="600"/>
+    <video width="640" height="450" controls type="video/mp4" autoplay>
+        <source src="assets/gameplay.mp4" type="video/mp4">
+    </video>
 </p>
 
 ---

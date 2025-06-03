@@ -25,7 +25,7 @@ class KeyboardWorker(QThread):
                 if it should even check for input
         """
         super().__init__()
-        self.config = Config()
+        self.config = Config("player")
         self.objects = objects
     
     def run(self) -> None:

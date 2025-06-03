@@ -1,4 +1,6 @@
 import sys
+import platform
+if platform.system() == "Linux": raise RuntimeError("This game does not run on Linux. Sorry Luke & DNA, get a real OS. 😉")
 import random
 import PyQt5.QtWidgets as QtWidgets
 import models
@@ -47,7 +49,7 @@ class Window(Ui_Frame):
         }
         self.enemies = lambda: self.objects['dynamicObjects'][1:]
         self.player = None
-        self.config = Config()
+        self.config = Config("ui", "game")
         
         self.keyboardWorker = keyboardHandler.KeyboardWorker(self.objects)
         self.keyboardWorker.moving.connect(self.movePlayer)
@@ -335,3 +337,15 @@ if __name__ == "__main__":
 # TODO:     Audio
 # TODO:     Highscore
 # TODO:     What happens after death?
+# TODO:     Richtungsvektor neutralisieren mit jedem Tick, wenn der Knopf nicht gedrückt wird
+# TODO:     ~~Config je nach Sektion in unterschiedliche Methoden sortieren~~
+# TODO:     Performance updates (10% CPU aber 0% GPU ist crazy)
+# TODO:     Startbildschirm???
+# TODO:     Highscore System (MongoDB?)
+# TODO:     Cryptografie
+# TODO:     Audio hinzufügen
+# TODO:     (Un)Ranked Modi
+# TODO:         Je nach Einstellungen erfassen
+# TODO:     ~~Linux Benutzer ausschließen~~
+# TODO:     Mehr Wellenarten hinzufügen
+# TODO:     Mehr Einstellungen hinzufügen

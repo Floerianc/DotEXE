@@ -52,7 +52,7 @@ class DynamicPoint(Position):
             brush (QBrush, optional): Color of the square. Defaults to QBrush(QColor(255, 255, 255)).
             trailBrush (QBrush, optional): Color of the trail. Defaults to QBrush(QColor(120, 120, 120, 120)).
         """
-        self.config = Config()
+        self.config = Config("player", "enemy")
         self.scene = scene
         
         self.speed = [0, 0]

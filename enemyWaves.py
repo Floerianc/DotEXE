@@ -40,7 +40,6 @@ class EnemyWave(QThread):
             enemyCount (int): Amount of enemies
         """
         super().__init__()
-        self.config = Config()
         self.window = window
         self.waveType = waveType
         self.enemyCount = enemyCount

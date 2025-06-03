@@ -6,11 +6,23 @@ class Config(ConfigParser):
     Args:
         ConfigParser (_type_): uhh.. it's a Configparser
     """
-    def __init__(self) -> None:
+    def __init__(self, *types: str) -> None:
         super().__init__()
         self.read("_player.cfg")
         
+        self.configtype = {
+            'UI': self.UI,
+            'PLAYER': self.player,
+            'ENEMY': self.enemy,
+            'GAME': self.game
+        }
+        for t in types:
+            self.configtype[t.upper()]()
+    
+    def UI(self) -> None:
         self.FPSLS = self.getint("UI", "FPS_LABEL_FONT_SIZE", fallback=16)
+    
+    def player(self) -> None:
         self.MS = self.getint("Player", "MAX_SPEED", fallback=15)
         self.ACC = self.getfloat("Player", "ACCELERATION", fallback=1.6)
         self.FA = self.getfloat("Player", "FRICTION_AMPLIFIER", fallback=0.5)
@@ -22,11 +34,16 @@ class Config(ConfigParser):
         self.HP = self.getint("Player", "HP", fallback=100)
         self.MHP = self.getint("Player", "MAX_HP", fallback=100)
         
+    def enemy(self) -> None:
         self.EMS = self.getint("Enemy", "MAX_SPEED", fallback=10)
         self.EA = self.getfloat("Enemy", "ACCELERATION", fallback=1.2)
         self.ES = self.getint("Enemy", "SIZE", fallback=10)
-        
+    
+    def game(self) -> None:
         self.DC = self.getfloat("Game", "DAMAGE_COOLDOWN", fallback=0.25)
         self.WC = self.getint("Game", "WAVE_COOLDOWN", fallback=10000)
         self.IE = self.getint("Game", "INITIAL_ENEMIES", fallback=1)
         self.IW = self.getint("Game", "INITIAL_WAVE", fallback=0)
+
+if __name__ == "__main__":
+    a = Config()
