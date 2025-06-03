@@ -37,10 +37,8 @@ _Try beating my record: **4,788,867,552.84**_ ;)
 ## 🖥️ Media
 
 <p align="center">
-    <img src="assets/gameplay.png" alt="Gameplay Screenshot" width="600"/>
-    <video width="640" height="450" controls type="video/mp4" autoplay>
-        <source src="assets/gameplay.mp4" type="video/mp4">
-    </video>
+    <img src="assets/gameplay.png" alt="Gameplay Screenshot">
+    <img src="assets/gameplay.gif">
 </p>
 
 ---
